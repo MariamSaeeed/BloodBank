@@ -1,0 +1,20 @@
+﻿@model MyProject.Models.Acceptor
+@{
+    Layout = "~/Views/Home/layout.cshtml";
+}
+
+<form id="editQuestionForm" class="form-horizontal" style="width: 50%;margin: auto" action="/Acceptor/UpdateInfo" method="post">
+  
+    @Html.Label("Password")
+    @Html.TextBoxFor(m => m.Password, new { @class = "form-control input-sm" , Name = "pass" })
+    <br />
+    @Html.Label("Phone")
+    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control input-sm", Name = "phone" })
+   
+   <br />
+    <br />
+    <button type="submit" class="btn btn-xl" style="width:35%"> Update </button>
+   
+</form>
+
+
